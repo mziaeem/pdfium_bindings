@@ -6,8 +6,7 @@ import 'dart:io';
 import 'package:ffi/ffi.dart';
 import 'package:image/image.dart';
 import 'package:path/path.dart' as path;
-import 'package:pdfium_bindings/pdfium_bindings.dart';
-
+import 'package:notelib/pdfium/lib/pdfium_bindings.dart';
 void main() {
   final stopwatch = Stopwatch()..start();
   final libraryPath = path.join(Directory.current.path, 'pdfium.dll');

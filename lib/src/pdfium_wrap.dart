@@ -5,7 +5,7 @@ import 'dart:typed_data';
 import 'package:ffi/ffi.dart';
 import 'package:image/image.dart';
 import 'package:path/path.dart' as path;
-import 'package:pdfium_bindings/pdfium_bindings.dart';
+import 'package:notelib/pdfium/lib/pdfium_bindings.dart';
 
 /// Wrapper class to abstract the PDFium logic
 class PdfiumWrap {

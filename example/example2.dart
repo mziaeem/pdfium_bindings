@@ -1,4 +1,4 @@
-import 'package:pdfium_bindings/pdfium_bindings.dart';
+import 'package:notelib/pdfium/lib/pdfium_bindings.dart';
 
 PdfiumWrap? pdfium;
 void main() {

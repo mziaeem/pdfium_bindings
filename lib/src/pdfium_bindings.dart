@@ -919,61 +919,61 @@ abstract class FPDF_TEXT_RENDERMODE {
   static const int FPDF_TEXTRENDERMODE_LAST = 7;
 }
 
-class fpdf_action_t__ extends ffi.Opaque {}
+final class fpdf_action_t__ extends ffi.Opaque {}
 
-class fpdf_annotation_t__ extends ffi.Opaque {}
+final class fpdf_annotation_t__ extends ffi.Opaque {}
 
-class fpdf_attachment_t__ extends ffi.Opaque {}
+final class fpdf_attachment_t__ extends ffi.Opaque {}
 
-class fpdf_avail_t__ extends ffi.Opaque {}
+final class fpdf_avail_t__ extends ffi.Opaque {}
 
-class fpdf_bitmap_t__ extends ffi.Opaque {}
+final class fpdf_bitmap_t__ extends ffi.Opaque {}
 
-class fpdf_bookmark_t__ extends ffi.Opaque {}
+final class fpdf_bookmark_t__ extends ffi.Opaque {}
 
-class fpdf_clippath_t__ extends ffi.Opaque {}
+final class fpdf_clippath_t__ extends ffi.Opaque {}
 
-class fpdf_dest_t__ extends ffi.Opaque {}
+final class fpdf_dest_t__ extends ffi.Opaque {}
 
-class fpdf_document_t__ extends ffi.Opaque {}
+final class fpdf_document_t__ extends ffi.Opaque {}
 
-class fpdf_font_t__ extends ffi.Opaque {}
+final class fpdf_font_t__ extends ffi.Opaque {}
 
-class fpdf_form_handle_t__ extends ffi.Opaque {}
+final class fpdf_form_handle_t__ extends ffi.Opaque {}
 
-class fpdf_glyphpath_t__ extends ffi.Opaque {}
+final class fpdf_glyphpath_t__ extends ffi.Opaque {}
 
-class fpdf_javascript_action_t extends ffi.Opaque {}
+final class fpdf_javascript_action_t extends ffi.Opaque {}
 
-class fpdf_link_t__ extends ffi.Opaque {}
+final class fpdf_link_t__ extends ffi.Opaque {}
 
-class fpdf_page_t__ extends ffi.Opaque {}
+final class fpdf_page_t__ extends ffi.Opaque {}
 
-class fpdf_pagelink_t__ extends ffi.Opaque {}
+final class fpdf_pagelink_t__ extends ffi.Opaque {}
 
-class fpdf_pageobject_t__ extends ffi.Opaque {}
+final class fpdf_pageobject_t__ extends ffi.Opaque {}
 
-class fpdf_pageobjectmark_t__ extends ffi.Opaque {}
+final class fpdf_pageobjectmark_t__ extends ffi.Opaque {}
 
-class fpdf_pagerange_t__ extends ffi.Opaque {}
+final class fpdf_pagerange_t__ extends ffi.Opaque {}
 
-class fpdf_pathsegment_t extends ffi.Opaque {}
+final class fpdf_pathsegment_t extends ffi.Opaque {}
 
-class fpdf_schhandle_t__ extends ffi.Opaque {}
+final class fpdf_schhandle_t__ extends ffi.Opaque {}
 
-class fpdf_signature_t__ extends ffi.Opaque {}
+final class fpdf_signature_t__ extends ffi.Opaque {}
 
-class fpdf_structelement_t__ extends ffi.Opaque {}
+final class fpdf_structelement_t__ extends ffi.Opaque {}
 
-class fpdf_structelement_attr_t__ extends ffi.Opaque {}
+final class fpdf_structelement_attr_t__ extends ffi.Opaque {}
 
-class fpdf_structtree_t__ extends ffi.Opaque {}
+final class fpdf_structtree_t__ extends ffi.Opaque {}
 
-class fpdf_textpage_t__ extends ffi.Opaque {}
+final class fpdf_textpage_t__ extends ffi.Opaque {}
 
-class fpdf_widget_t__ extends ffi.Opaque {}
+final class fpdf_widget_t__ extends ffi.Opaque {}
 
-class fpdf_xobject_t__ extends ffi.Opaque {}
+final class fpdf_xobject_t__ extends ffi.Opaque {}
 
 abstract class FPDF_DUPLEXTYPE {
   static const int DuplexUndefined = 0;
@@ -982,14 +982,14 @@ abstract class FPDF_DUPLEXTYPE {
   static const int DuplexFlipLongEdge = 3;
 }
 
-class FPDF_BSTR extends ffi.Struct {
+final class FPDF_BSTR extends ffi.Struct {
   external ffi.Pointer<ffi.Int8> str;
 
   @ffi.Int32()
   external int len;
 }
 
-class FS_MATRIX extends ffi.Struct {
+final class FS_MATRIX extends ffi.Struct {
   @ffi.Float()
   external double a;
 
@@ -1009,7 +1009,7 @@ class FS_MATRIX extends ffi.Struct {
   external double f;
 }
 
-class FS_RECTF extends ffi.Struct {
+final class FS_RECTF extends ffi.Struct {
   @ffi.Float()
   external double left;
 
@@ -1023,7 +1023,7 @@ class FS_RECTF extends ffi.Struct {
   external double bottom;
 }
 
-class FS_SIZEF extends ffi.Struct {
+final class FS_SIZEF extends ffi.Struct {
   @ffi.Float()
   external double width;
 
@@ -1031,7 +1031,7 @@ class FS_SIZEF extends ffi.Struct {
   external double height;
 }
 
-class FS_POINTF extends ffi.Struct {
+final class FS_POINTF extends ffi.Struct {
   @ffi.Float()
   external double x;
 
@@ -1039,7 +1039,7 @@ class FS_POINTF extends ffi.Struct {
   external double y;
 }
 
-class FPDF_LIBRARY_CONFIG extends ffi.Struct {
+final class FPDF_LIBRARY_CONFIG extends ffi.Struct {
   @ffi.Int32()
   external int version;
 
@@ -1053,7 +1053,7 @@ class FPDF_LIBRARY_CONFIG extends ffi.Struct {
   external ffi.Pointer<ffi.Void> m_pPlatform;
 }
 
-class FPDF_FILEACCESS extends ffi.Struct {
+final class FPDF_FILEACCESS extends ffi.Struct {
   @ffi.Uint64()
   external int m_FileLen;
 
@@ -1062,7 +1062,7 @@ class FPDF_FILEACCESS extends ffi.Struct {
   external ffi.Pointer<ffi.Void> m_Param;
 }
 
-class FPDF_FILEHANDLER extends ffi.Struct {
+final class FPDF_FILEHANDLER extends ffi.Struct {
   external ffi.Pointer<ffi.Void> clientData;
 
   external ffi.Pointer<ffi.NativeFunction<_typedefC_2>> Release;
@@ -1078,7 +1078,7 @@ class FPDF_FILEHANDLER extends ffi.Struct {
   external ffi.Pointer<ffi.NativeFunction<_typedefC_7>> Truncate;
 }
 
-class FPDF_COLORSCHEME extends ffi.Struct {
+final class FPDF_COLORSCHEME extends ffi.Struct {
   @ffi.Uint64()
   external int path_fill_color;
 
@@ -1092,7 +1092,7 @@ class FPDF_COLORSCHEME extends ffi.Struct {
   external int text_stroke_color;
 }
 
-class HDC extends ffi.Struct {
+final class HDC extends ffi.Struct {
   @ffi.Int32()
   external int unused;
 }
